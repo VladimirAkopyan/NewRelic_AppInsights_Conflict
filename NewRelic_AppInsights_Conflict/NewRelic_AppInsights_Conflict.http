@@ -1,0 +1,6 @@
+@NewRelic_AppInsights_Conflict_HostAddress = http://localhost:5055
+
+GET {{NewRelic_AppInsights_Conflict_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

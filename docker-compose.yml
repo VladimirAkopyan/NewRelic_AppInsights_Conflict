@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  newrelic_appinsights_conflict:
+    image: ${DOCKER_REGISTRY-}newrelicappinsightsconflict
+    build:
+      context: .
+      dockerfile: NewRelic_AppInsights_Conflict/Dockerfile
+    environment:
+    - APPLICATIONINSIGHTS_CONNECTION_STRING=${APPLICATIONINSIGHTS_CONNECTION_STRING}
+    - NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY
+    ports:
+    - 8080:8080
+    
+

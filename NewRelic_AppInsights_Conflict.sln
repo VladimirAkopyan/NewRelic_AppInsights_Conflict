@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewRelic_AppInsights_Conflict", "NewRelic_AppInsights_Conflict\NewRelic_AppInsights_Conflict.csproj", "{361DC961-1620-42C9-B1EE-8337745BDD03}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BF017EE4-71D5-4626-8930-A35373954DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{361DC961-1620-42C9-B1EE-8337745BDD03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361DC961-1620-42C9-B1EE-8337745BDD03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361DC961-1620-42C9-B1EE-8337745BDD03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361DC961-1620-42C9-B1EE-8337745BDD03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF017EE4-71D5-4626-8930-A35373954DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF017EE4-71D5-4626-8930-A35373954DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF017EE4-71D5-4626-8930-A35373954DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF017EE4-71D5-4626-8930-A35373954DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {981E30B4-52A4-4C34-B833-02A08C58B3D3}
+	EndGlobalSection
+EndGlobal
