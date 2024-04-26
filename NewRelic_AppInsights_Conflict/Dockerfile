@@ -19,11 +19,6 @@ ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./NewRelic_AppInsights_Conflict.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
-ENV CORECLR_ENABLE_PROFILING=1 \
-CORECLR_PROFILER={36032161-FFC0-4B61-B559-F6C5D41BAE5A} \
-CORECLR_PROFILER_PATH=/app/newrelic/libNewRelicProfiler.so \
-CORECLR_NEWRELIC_HOME=/app/newrelic \
-NEW_RELIC_APP_NAME=RELIC_APPINSIGHT_CONFLICT
 
 WORKDIR /app
 COPY --from=publish /app/publish .
